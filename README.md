@@ -29,7 +29,7 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
   git clone https://github.com/Anon4You/Venom.git
   ```
 
-- Now go to cloned directory and run `Venom.sh` -
+- Now go to cloned directory and run `venom.sh` -
   ```
   cd Venom
   bash venom.sh
