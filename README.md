@@ -4,8 +4,6 @@
   <img src="img/venom.png">
 </p>
 
-An automated phishing tool with 15+ templates. This Tool is made for educational purpose only ! Author will not be responsible for any misuse of this toolkit !
-##
 <h3><p align="center">Disclaimer</p></h3>
 
 <i>Any actions and or activities related to <b>Venom</b> is solely your responsibility. The misuse of this toolkit can result in <b>criminal charges</b> brought against the persons in question. <b>The Author will not be held responsible</b> in the event any criminal charges be brought against any individuals misusing this toolkit to break the law.
