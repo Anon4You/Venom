@@ -34,3 +34,9 @@ It only demonstrates "how phishing works". <b>You shall not misuse the informati
   cd Venom
   bash venom.sh
   ```
+## Tutorial on Telegram Channel 
+* [TELEGRAM](https://t.me/nullxvoid)
+
+## Author and credits
+* [Author](https://github.com/Anon4You)
+* [Login page credit](https://github.com/Anon4You/Venom/blob/main/img/Credit.md)
