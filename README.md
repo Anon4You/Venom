@@ -1,18 +1,17 @@
-# Venom
-
 <p align="center">
   <img src="img/venom.png">
 </p>
+<p align="center"><b> An automated phishing tool for absolute beginners </b></p>
 
+[![YouTube](https://img.shields.io/badge/You-Tube-red)](https://youtube.com/@alienkrishnorg) [![License](https://img.shields.io/badge/Licenese-MIT-blue.svg?longCache=true&style=flat)](https://github.com/Anon4You/Venom/blob/main/LICENSE) [![Telegram](https://img.shields.io/badge/Telegram-Id-green)](https://t.me/nullxvoid)
+
+##
 <h3><p align="center">Disclaimer</p></h3>
 
-<i>Any actions and or activities related to <b>Venom</b> is solely your responsibility. The misuse of this toolkit can result in <b>criminal charges</b> brought against the persons in question. <b>The Author will not be held responsible</b> in the event any criminal charges be brought against any individuals misusing this toolkit to break the law.
+<i>The <b>Venom</b> Tool is designed exclusively for educational and authorized cybersecurity research purposes. Unauthorized use, including any illegal, unethical, or harmful activities, is strictly prohibited and may result in severe legal and disciplinary actions. Users must ensure full compliance with applicable laws, regulations, and ethical standards. <b>The author assumes no responsibility or liability for any misuse of this tool.</b>
+</i>
 
-<b>This toolkit contains materials that can be potentially damaging or dangerous for social media</b>. Refer to the laws in your province/country before accessing, using,or in any other way utilizing this in a wrong way.
 
-<b>This Tool is made for educational purposes only</b>. Do not attempt to violate the law with anything contained here. <b>If this is your intention, then Get the hell out of here</b>!
-
-It only demonstrates "how phishing works". <b>You shall not misuse the information to gain unauthorized access to someones social media</b>. However you may try out this at your own risk.</i>
 ##
 ### Features
 
