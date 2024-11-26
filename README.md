@@ -3,9 +3,7 @@
 </p>
 <p align="center"><b> An automated phishing tool for absolute beginners </b></p>
 
-<p align="center">
-
-[![YouTube](https://img.shields.io/badge/You-Tube-red)](https://youtube.com/@alienkrishnorg) [![License](https://img.shields.io/badge/Licenese-MIT-blue.svg?longCache=true&style=flat)](https://github.com/Anon4You/Venom/blob/main/LICENSE) [![Telegram](https://img.shields.io/badge/Telegram-join-green)](https://t.me/nullxvoid) </p>
+[![YouTube](https://img.shields.io/badge/You-Tube-red)](https://youtube.com/@alienkrishnorg) [![License](https://img.shields.io/badge/Licenese-MIT-blue.svg?longCache=true&style=flat)](https://github.com/Anon4You/Venom/blob/main/LICENSE) [![Telegram](https://img.shields.io/badge/Telegram-join-green)](https://t.me/nullxvoid) 
 
 ##
 <h3><p align="center">Disclaimer</p></h3>
