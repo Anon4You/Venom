@@ -18,7 +18,6 @@
 - Latest and updated login pages.
 - Beginners friendly
 - No cloudflared or Ngrok needed
-- Two port forwarding option
 - OTP Bypass pages
 - No link issues 
 ### Installation
