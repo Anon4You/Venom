@@ -19,7 +19,8 @@
 - Beginners friendly
 - No cloudflared or Ngrok needed
 - OTP Bypass pages
-- No link issues 
+- No link issues
+- Tow port forwording tunnel
 ### Installation
 
 - Just, Clone this repository -
