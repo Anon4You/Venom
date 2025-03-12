@@ -2,7 +2,7 @@
 
 ##   Venom 	: 	Automated Phishing Tool
 ##   Author 	: 	https://t.me/nullxvoid 
-##   Version 	: 	1.0.1
+##   Version 	: 	1.0.2
 
 # Checking Internet connection
 
