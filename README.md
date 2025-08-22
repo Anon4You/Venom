@@ -45,13 +45,8 @@
    bash venom.sh
    ```
 
-### Option 2: Install via Termux (If Alienkrishn Repository is Added)
-1. **Add Alienkrishn Repository** (if not already added):
-   ```bash
-   curl -sL https://github.com/Anon4You/alienkrishn/raw/main/addrepo | bash
-   ```
 
-2. **Install Venom Using apt**:
+2. **Install Venom Using TermuxVoid Repo**:
    ```bash
    apt install venom -y
    ```
